@@ -1,0 +1,251 @@
+country,continent,population,area
+Afghanistan,Asia,37172386,652090.0
+Albania,Europe,2866376,28748.0
+Algeria,Africa,42228429,2381741.0
+American Samoa,Oceania,55465,199.0
+Andorra,Europe,77006,468.0
+Angola,Africa,30809762,1246700.0
+Anguilla,North America,15094,96.0
+Antarctica,Antarctica,1106,13120000.0
+Antigua and Barbuda,North America,96286,442.0
+Argentina,South America,44494502,2780400.0
+Armenia,Asia,2951776,29800.0
+Aruba,North America,105845,193.0
+Australia,Oceania,24982688,7741220.0
+Austria,Europe,8840521,83859.0
+Azerbaijan,Asia,9939800,86600.0
+Bahamas,North America,385640,13878.0
+Bahrain,Asia,1569439,694.0
+Bangladesh,Asia,161356039,143998.0
+Barbados,North America,286641,430.0
+Belarus,Europe,9483499,207600.0
+Belgium,Europe,11433256,30518.0
+Belize,North America,383071,22696.0
+Benin,Africa,11485048,112622.0
+Bermuda,North America,63973,53.0
+Bhutan,Asia,754394,47000.0
+Bolivia,South America,11353142,1098581.0
+Bosnia and Herzegovina,Europe,3323929,51197.0
+Botswana,Africa,2254126,581730.0
+Bouvet Island,Antarctica,0,59.0
+Brazil,South America,209469333,8547403.0
+British Indian Ocean Territory,Africa,0,78.0
+Brunei,Asia,428962,5765.0
+Bulgaria,Europe,7025037,110994.0
+Burkina Faso,Africa,19751535,274000.0
+Burundi,Africa,11175378,27834.0
+Cambodia,Asia,16249798,181035.0
+Cameroon,Africa,25216237,475442.0
+Canada,North America,37057765,9970610.0
+Cape Verde,Africa,543767,4033.0
+Cayman Islands,North America,64174,264.0
+Central African Republic,Africa,4666377,622984.0
+Chad,Africa,15477751,1284000.0
+Chile,South America,18729160,756626.0
+China,Asia,1392730000,9572900.0
+Christmas Island,Oceania,1402,135.0
+Cocos (Keeling) Islands,Oceania,596,14.0
+Colombia,South America,49648685,1138914.0
+Comoros,Africa,832322,1862.0
+Congo,Africa,5244363,342000.0
+Cook Islands,Oceania,17379,236.0
+Costa Rica,North America,4999441,51100.0
+Croatia,Europe,4087843,56538.0
+Cuba,North America,11338138,110861.0
+Cyprus,Asia,1189265,9251.0
+Czech Republic,Europe,10629928,78866.0
+Denmark,Europe,5793636,43094.0
+Djibouti,Africa,958920,23200.0
+Dominica,North America,71625,751.0
+Dominican Republic,North America,10627165,48511.0
+East Timor,Asia,1267972,14874.0
+Ecuador,South America,17084357,283561.0
+Egypt,Africa,98423595,1001449.0
+El Salvador,North America,6420744,21041.0
+England,Europe,55619400
+Equatorial Guinea,Africa,1308974,28051.0
+Eritrea,Africa,6213972,117600.0
+Estonia,Europe,1321977,45227.0
+Eswatini,Africa,1136191,17364.0
+Ethiopia,Africa,109224559,1104300.0
+Falkland Islands,South America,2840,12173.0
+Faroe Islands,Europe,48497,1399.0
+Fiji Islands,Oceania,883483,18274.0
+Finland,Europe,5515525,338145.0
+France,Europe,66977107,551500.0
+French Guiana,South America,290691,90000.0
+French Polynesia,Oceania,277679,4000.0
+French Southern territories,Antarctica,0,7780.0
+Gabon,Africa,2119275,267668.0
+Gambia,Africa,2280102,11295.0
+Georgia,Asia,3726549,69700.0
+Germany,Europe,82905782,357022.0
+Ghana,Africa,29767108,238533.0
+Gibraltar,Europe,33718,6.0
+Greece,Europe,10731726,131626.0
+Greenland,North America,56025,2166090.0
+Grenada,North America,111454,344.0
+Guadeloupe,North America,395700,1705.0
+Guam,Oceania,165768,549.0
+Guatemala,North America,17247807,108889.0
+Guinea,Africa,12414318,245857.0
+Guinea-Bissau,Africa,1874309,36125.0
+Guyana,South America,779004,214969.0
+Haiti,North America,11123176,27750.0
+Heard Island and McDonald Islands,Antarctica,0,359.0
+Holy See (Vatican City State),Europe,825,0.4
+Honduras,North America,9587522,112088.0
+Hong Kong,Asia,7451000,1075.0
+Hungary,Europe,9775564,93030.0
+Iceland,Europe,352721,103000.0
+India,Asia,1352617328,3287263.0
+Indonesia,Asia,267663435,1904569.0
+Iran,Asia,81800269,1648195.0
+Iraq,Asia,38433600,438317.0
+Ireland,Europe,4867309,70273.0
+Israel,Asia,8882800,21056.0
+Italy,Europe,60421760,301316.0
+Ivory Coast,Africa,25069229,322463.0
+Jamaica,North America,2934855,10990.0
+Japan,Asia,126529100,377829.0
+Jordan,Asia,9956011,88946.0
+Kazakhstan,Asia,18272430,2724900.0
+Kenya,Africa,51393010,580367.0
+Kiribati,Oceania,115847,726.0
+Kuwait,Asia,4137309,17818.0
+Kyrgyzstan,Asia,6322800,199900.0
+Laos,Asia,7061507,236800.0
+Latvia,Europe,1927174,64589.0
+Lebanon,Asia,6848925,10400.0
+Lesotho,Africa,2108132,30355.0
+Liberia,Africa,4818977,111369.0
+Libya,Africa,6678567,1759540.0
+Liechtenstein,Europe,37910,160.0
+Lithuania,Europe,2801543,65301.0
+Luxembourg,Europe,607950,2586.0
+Macao,Asia,631636,18.0
+North Macedonia,Europe,2084367,25713.0
+Madagascar,Africa,26262368,587041.0
+Malawi,Africa,18143315,118484.0
+Malaysia,Asia,31528585,329758.0
+Maldives,Asia,515696,298.0
+Mali,Africa,19077690,1240192.0
+Malta,Europe,484630,316.0
+Marshall Islands,Oceania,58413,181.0
+Martinique,North America,376480,1102.0
+Mauritania,Africa,4403319,1025520.0
+Mauritius,Africa,1265303,2040.0
+Mayotte,Africa,270372,373.0
+Mexico,North America,126190788,1958201.0
+"Micronesia, Federated States of",Oceania,112640
+Moldova,Europe,2706049,33851.0
+Monaco,Europe,38682,1.5
+Mongolia,Asia,3170208,1566500.0
+Montenegro,Europe,631219
+Montserrat,North America,5900,102.0
+Morocco,Africa,36029138,446550.0
+Mozambique,Africa,29495962,801590.0
+Myanmar,Asia,53708395,676578.0
+Namibia,Africa,2448255,824292.0
+Nauru,Oceania,12704,21.0
+Nepal,Asia,28087871,147181.0
+Netherlands,Europe,17231624,41526.0
+Netherlands Antilles,North America,227049,800.0
+New Caledonia,Oceania,284060,18575.0
+New Zealand,Oceania,4841000,270534.0
+Nicaragua,North America,6465513,130000.0
+Niger,Africa,22442948,1267000.0
+Nigeria,Africa,195874740,923768.0
+Niue,Oceania,1624,260.0
+Norfolk Island,Oceania,2169,36.0
+North Korea,Asia,25549819,120538.0
+Northern Ireland,Europe,1885400
+Northern Mariana Islands,Oceania,56882,464.0
+Norway,Europe,5311916,323877.0
+Oman,Asia,4829483,309500.0
+Pakistan,Asia,212215030,796095.0
+Palau,Oceania,17907,459.0
+Palestine,Asia,4569087,6257.0
+Panama,North America,4176873,75517.0
+Papua New Guinea,Oceania,8606316,462840.0
+Paraguay,South America,6956071,406752.0
+Peru,South America,31989256,1285216.0
+Philippines,Asia,106651922,300000.0
+Pitcairn,Oceania,67,49.0
+Poland,Europe,37974750,323250.0
+Portugal,Europe,10283822,91982.0
+Puerto Rico,North America,3195153,8875.0
+Qatar,Asia,2781677,11000.0
+Reunion,Africa,859959,2510.0
+Romania,Europe,19466145,238391.0
+Russia,Europe,144478050,17075400.0
+Rwanda,Africa,12301939,26338.0
+Saint Helena,Africa,6600,314.0
+Saint Kitts and Nevis,North America,52441,261.0
+Saint Lucia,North America,181889,622.0
+Saint Pierre and Miquelon,North America,5888,242.0
+Saint Vincent and the Grenadines,North America,110210,388.0
+Samoa,Oceania,196130,2831.0
+San Marino,Europe,33785,61.0
+Sao Tome and Principe,Africa,211028,964.0
+Saudi Arabia,Asia,33699947,2149690.0
+Scotland,Europe,5424800
+Senegal,Africa,15854360,196722.0
+Serbia,Europe,6963764,88361.0
+Seychelles,Africa,96762,455.0
+Sierra Leone,Africa,7650154,71740.0
+Singapore,Asia,5638676,618.0
+Slovakia,Europe,5446771,49012.0
+Slovenia,Europe,2073894,20256.0
+Solomon Islands,Oceania,652858,28896.0
+Somalia,Africa,15008154,637657.0
+South Africa,Africa,57779622,1221037.0
+South Georgia and the South Sandwich Islands,Antarctica,30,3903.0
+South Korea,Asia,51606633,99434.0
+South Sudan,Africa,10975920,619745.0
+Spain,Europe,46796540,505992.0
+Sri Lanka,Asia,21670000,65610.0
+Sudan,Africa,41801533,1886068.0
+Suriname,South America,575991,163265.0
+Svalbard and Jan Mayen,Europe,2572,62422.0
+Sweden,Europe,10175214,449964.0
+Switzerland,Europe,8513227,41284.0
+Syria,Asia,16906283,185180.0
+Tajikistan,Asia,9100837,143100.0
+Tanzania,Africa,56318348,883749.0
+Thailand,Asia,69428524,513115.0
+The Democratic Republic of Congo,Africa,84068091
+Togo,Africa,7889094,56785.0
+Tokelau,Oceania,1411,12.0
+Tonga,Oceania,103197,650.0
+Trinidad and Tobago,North America,1389858,5130.0
+Tunisia,Africa,11565204,163610.0
+Turkey,Asia,82319724,774815.0
+Turkmenistan,Asia,5850908,488100.0
+Turks and Caicos Islands,North America,37665,430.0
+Tuvalu,Oceania,11508,26.0
+Uganda,Africa,42723139,241038.0
+Ukraine,Europe,44622516,603700.0
+United Arab Emirates,Asia,9630959,83600.0
+United Kingdom,Europe,66460344,242900.0
+United States,North America,326687501,9363520.0
+United States Minor Outlying Islands,Oceania,300,16.0
+Uruguay,South America,3449299,175016.0
+Uzbekistan,Asia,32955400,447400.0
+Vanuatu,Oceania,292680,12189.0
+Venezuela,South America,28870195,912050.0
+Vietnam,Asia,95540395,331689.0
+"Virgin Islands, British",North America,29802
+"Virgin Islands, U.S.",North America,106977
+Wales,Europe,3139000
+Wallis and Futuna,Oceania,15289,200.0
+Western Sahara,Africa,652271,266000.0
+Yemen,Asia,28498687,527968.0
+Zambia,Africa,17351822,752618.0
+Zimbabwe,Africa,14439018,390757.0
+Cabo Verde,555987
+The Democratic Republic of the Congo,2344858.0
+Federated States of Micronesia,702.0
+Taiwan,36188.0
+British Virgin Islands,151.0
+U.S. Virgin Islands,347.0

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <script src="./scripts.js" defer></script>
     <title>Oncotô</title>
 </head>
 <body>
@@ -19,6 +20,20 @@
             <p class="hint-text">Área</p>
             <p class="hint-text">Continente</p>
         </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>País</th>
+                    <th>População</th>
+                    <th>Área</th>
+                    <th>Continente</th>
+                </tr>
+            </thead>
+            <tbody id="country-table">
+                <!-- Country rows will be dynamically added here -->
+            </tbody>
+        </table>
     </main>
 
     <!-- Modal de Regras -->
@@ -27,7 +42,7 @@
             <span id="close-modal">&times;</span>
             <h2>Regras do Jogo</h2>
             <p>O objetivo do jogo é adivinhar o país com base nas dicas que você recebe.</p>
-            <ul>
+            <ul id="rule-list">
                 <li>Você pode pedir dicas sobre a população, área ou continente do país.</li>
                 <li>Se errar o chute, o país será adicionado a uma tabela com informações para comparação.</li>
                 <li>Continue tentando até acertar o país!</li>

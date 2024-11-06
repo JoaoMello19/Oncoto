@@ -33,6 +33,7 @@ button {
     width: 20%;
     font-weight: bold;
     background-color: white;
+    cursor: pointer;
 }
 
 #hint-row {
@@ -65,26 +66,50 @@ button, input, p {
 }
 
 #modal-content {
-    background-color: #fff;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
     width: 80%;
     max-width: 500px;
+    
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    padding-bottom: 50px;
+
+    border: 2px solid grey;
     border-radius: 8px;
+    
+    background-color: #fff;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
 }
 
 #close-modal {
-    color: #aaa;
-    float: right;
+    margin-left: auto;
+    width: fit-content;
+    aspect-ratio: 1;
+
     font-size: 28px;
     font-weight: bold;
+    line-height: 0.75;
+    text-align: center;
+    color: white;
+
+    background-color: black;
     cursor: pointer;
 }
 
 #close-modal:hover,
 #close-modal:focus {
-    color: #000;
     text-decoration: none;
+}
+
+h2 {
+    font-size: 14pt;
+    text-align: center;
+}
+
+#rule-list {
+    padding-left: 20px;
 }

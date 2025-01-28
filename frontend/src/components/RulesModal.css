@@ -1,0 +1,42 @@
+#modal-container {
+    position: absolute;
+    inset: 0;
+
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#opaque-bg {
+    position: absolute;
+    inset: 0;
+}
+
+#modal {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    max-width: 90vw;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+
+    background-color: #333;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+#modal h2 {
+    margin: auto;
+    font-size: 1.25rem;
+}
+
+#rules-list {
+    margin-left: 20px;
+}
+
+#modal p {
+    text-align: right;
+    font-weight: bold;
+}

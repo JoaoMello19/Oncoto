@@ -1,0 +1,101 @@
+country,country_pt,continent,continent_pt,population,area
+Afghanistan,Afeganistão,Asia,Ásia,37172386,652090.0
+Argentina,Argentina,South America,América do Sul,44494502,2780400.0
+Australia,Austrália,Oceania,Oceania,24982688,7741220.0
+Austria,Áustria,Europe,Europa,8840521,83859.0
+Belgium,Bélgica,Europe,Europa,11433256,30518.0
+Bolivia,Bolívia,South America,América do Sul,11353142,1098581.0
+Brazil,Brasil,South America,América do Sul,209469333,8547403.0
+Bulgaria,Bulgária,Europe,Europa,7025037,110994.0
+Canada,Canadá,North America,América do Norte,37057765,9970610.0
+Chile,Chile,South America,América do Sul,18729160,756626.0
+China,China,Asia,Ásia,1392730000,9572900.0
+Colombia,Colômbia,South America,América do Sul,49648685,1138914.0
+Costa Rica,Costa Rica,North America,América do Norte,4999441,51100.0
+Croatia,Croácia,Europe,Europa,4087843,56538.0
+Cuba,Cuba,North America,América do Norte,11338138,110861.0
+Czech Republic,República Tcheca,Europe,Europa,10629928,78866.0
+Denmark,Dinamarca,Europe,Europa,5793636,43094.0
+Dominican Republic,República Dominicana,North America,América do Norte,10627165,48511.0
+Ecuador,Equador,South America,América do Sul,17084357,283561.0
+Egypt,Egito,Africa,África,98423595,1001449.0
+England,Inglaterra,Europe,Europa,55619400,132932.0
+Ethiopia,Etiópia,Africa,África,109224559,1104300.0
+Finland,Finlândia,Europe,Europa,5515525,338145.0
+France,França,Europe,Europa,66977107,551500.0
+Georgia,Geórgia,Asia,Ásia,3726549,69700.0
+Germany,Alemanha,Europe,Europa,82905782,357022.0
+Greece,Grécia,Europe,Europa,10731726,131626.0
+Guatemala,Guatemala,North America,América do Norte,17247807,108889.0
+Haiti,Haiti,North America,América do Norte,11123176,27750.0
+Honduras,Honduras,North America,América do Norte,9587522,112088.0
+Hungary,Hungria,Europe,Europa,9775564,93030.0
+Iceland,Islândia,Europe,Europa,352721,103000.0
+India,Índia,Asia,Ásia,1352617328,3287263.0
+Indonesia,Indonésia,Asia,Ásia,267663435,1904569.0
+Iran,Irã,Asia,Ásia,81800269,1648195.0
+Iraq,Iraque,Asia,Ásia,38433600,438317.0
+Ireland,Irlanda,Europe,Europa,4867309,70273.0
+Israel,Israel,Asia,Ásia,8882800,21056.0
+Italy,Itália,Europe,Europa,60421760,301316.0
+Jamaica,Jamaica,North America,América do Norte,2934855,10990.0
+Japan,Japão,Asia,Ásia,126529100,377829.0
+Jordan,Jordânia,Asia,Ásia,9956011,88946.0
+Kenya,Quênia,Africa,África,51393010,580367.0
+Kuwait,Kwait,Asia,Ásia,4137309,17818.0
+Laos,Laos,Asia,Ásia,7061507,236800.0
+Lebanon,Líbano,Asia,Ásia,6848925,10400.0
+Libya,Líbia,Africa,África,6678567,1759540.0
+Luxembourg,Luxemburgo,Europe,Europa,607950,2586.0
+Malaysia,Malásia,Asia,Ásia,31528585,329758.0
+Malta,Malta,Europe,Europa,484630,316.0
+Mexico,México,North America,América do Norte,126190788,1958201.0
+Monaco,Mônaco,Europe,Europa,38682,1.5
+Morocco,Marrocos,Africa,África,36029138,446550.0
+Mozambique,Moçambique,Africa,África,29495962,801590.0
+Namibia,Namíbia,Africa,África,2448255,824292.0
+Nepal,Nepal,Asia,Ásia,28087871,147181.0
+Netherlands,Holanda,Europe,Europa,17231624,41526.0
+New Zealand,Nova Zelândia,Oceania,Oceania,4841000,270534.0
+Nigeria,Nigéria,Africa,África,195874740,923768.0
+North Korea,Coreia do Norte,Asia,Ásia,25549819,120538.0
+Norway,Noruega,Europe,Europa,5311916,323877.0
+Oman,Omã,Asia,Ásia,4829483,309500.0
+Pakistan,Paquistão,Asia,Ásia,212215030,796095.0
+Panama,Panamá,North America,América do Norte,4176873,75517.0
+Paraguay,Paraguai,South America,América do Sul,6956071,406752.0
+Peru,Peru,South America,América do Sul,31989256,1285216.0
+Philippines,Filipinas,Asia,Ásia,106651922,300000.0
+Poland,Polônia,Europe,Europa,37974750,323250.0
+Portugal,Portugal,Europe,Europa,10283822,91982.0
+Qatar,Catar,Asia,Ásia,2781677,11000.0
+Romania,Romênia,Europe,Europa,19466145,238391.0
+Russia,Rússia,Europe,Europa,144478050,17075400.0
+Saudi Arabia,Arábia Saudita,Asia,Ásia,33699947,2149690.0
+Senegal,Senegal,Africa,África,15854360,196722.0
+Serbia,Sérvia,Europe,Europa,6963764,88361.0
+Singapore,Cingapura,Asia,Ásia,5638676,618.0
+Slovakia,Eslováquia,Europe,Europa,5446771,49012.0
+Slovenia,Eslovênia,Europe,Europa,2073894,20256.0
+South Africa,África do Sul,Africa,África,57779622,1221037.0
+South Korea,Coreia do Sul,Asia,Ásia,51606633,99434.0
+Spain,Espanha,Europe,Europa,46796540,505992.0
+Sri Lanka,Sri Lanka,Asia,Ásia,21670000,65610.0
+Sweden,Suécia,Europe,Europa,10175214,449964.0
+Switzerland,Suíça,Europe,Europa,8513227,41284.0
+Syria,Síria,Asia,Ásia,16906283,185180.0
+Taiwan,Taiwan,Asia,Ásia,23577271,36188.0
+Tanzania,Tanzânia,Africa,África,56318348,883749.0
+Thailand,Tailândia,Asia,Ásia,69428524,513115.0
+Tunisia,Tunísia,Africa,África,11565204,163610.0
+Turkey,Turquia,Asia,Ásia,82319724,774815.0
+Uganda,Uganda,Africa,África,42723139,241038.0
+Ukraine,Ucrânia,Europe,Europa,44622516,603700.0
+United Arab Emirates,Emirados Árabes Unidos,Asia,Ásia,9630959,83600.0
+United States,Estados Unidos,North America,América do Norte,326687501,9363520.0
+Uruguay,Uruguai,South America,América do Sul,3449299,175016.0
+Uzbekistan,Uzbequistão,Asia,Ásia,32955400,447400.0
+Venezuela,Venezuela,South America,América do Sul,28870195,912050.0
+Vietnam,Vietnã,Asia,Ásia,95540395,331689.0
+Zambia,Zâmbia,Africa,África,17351822,752618.0
+Zimbabwe,Zimbábue,Africa,África,14439018,390757.0

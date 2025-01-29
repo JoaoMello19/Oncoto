@@ -23,8 +23,8 @@ export default function InputContainer({
                 onChange={(event) => setInputValue(event.target.value)}
                 onKeyDown={(event) => {
                     if (event.key === "Enter") {
-                        onCountrySubmit(event);
-                        setInputValue("");
+                        const { found, correct } = onCountrySubmit(event);
+                        if (found) setInputValue("");
                     }
                 }}
             />

@@ -8,8 +8,8 @@ export default function App() {
     const [showModal, setShowModal] = useState(false);
     const [selectedCountry, setSelectedCountry] = useState(null);
 
+    const [showInput, setShowInput] = useState(true);
     const [hintCount, setHintCount] = useState(0);
-
     const [tries, setTries] = useState([]);
 
     useEffect(() => {
@@ -23,6 +23,7 @@ export default function App() {
             .catch(console.error);
     }, []);
 
+    // TODO: implementar pequenas correções no nome
     function levenshteinDistance(a, b) {
         const matrix = Array(a.length + 1)
             .fill(null)
@@ -59,35 +60,51 @@ export default function App() {
         }
     }
 
-    function onCountrySubmit(event) {
-        if (event.key === "Enter") {
-            event.preventDefault();
-            const inputValue = document.getElementById("country").value;
-            const matchedCountry = countries.find(
-                (c) => c.country_pt.toLowerCase() == inputValue.toLowerCase()
-            );
+    function compareCountries(c1, c2) {
+        const country1 = c1.country_pt.toLowerCase();
+        const country2 = c2.country_pt.toLowerCase();
+        return country1 == country2;
+    }
 
-            if (matchedCountry) {
-                console.log("Achei esse país:", matchedCountry);
-                setTries([...tries, matchedCountry]); // TODO: verificar duplicação...
-            } else {
-                console.log("Não achei esse país...");
+    function onCountrySubmit(event) {
+        event.preventDefault();
+
+        const inputValue = event.target.value;
+        const matchedCountry = countries.find(
+            (country) =>
+                country.country_pt.toLowerCase() == inputValue.toLowerCase()
+        );
+
+        if (matchedCountry) {
+            console.log("Achei esse país:", matchedCountry);
+            setTries([...tries, matchedCountry]); // TODO: verificar duplicação...
+
+            if (compareCountries(matchedCountry, selectedCountry)) {
+                console.log("Acertô!");
+                setShowInput(false);
+                // TODO: fazer a tela de fim de jogo
             }
+
+            return { found: true };
         }
+
+        console.log("Não achei esse país...");
+        return { found: false };
     }
 
     return (
         <main>
             {showModal && <RulesModal closeModal={() => setShowModal(false)} />}
+
             <Header onHelpClick={onHelpClick} onHintClick={onHintClick} />
 
-            {/* TODO: Exibir as regras do jogo */}
-
-            <InputContainer
-                country={selectedCountry}
-                hintCount={hintCount}
-                onCountrySubmit={onCountrySubmit}
-            />
+            {showInput && (
+                <InputContainer
+                    country={selectedCountry}
+                    hintCount={hintCount}
+                    onCountrySubmit={onCountrySubmit}
+                />
+            )}
 
             <section id="try-list"></section>
 

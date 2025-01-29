@@ -27,13 +27,13 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 50px;
 
     min-width: 400px;
     max-width: 600px;
     margin: auto;
     padding: 5px;
-    
+
     border: 1px solid #555;
 }
 
@@ -53,7 +53,7 @@ input {
 
     margin-bottom: 10px;
     padding: 10px;
-    
+
     text-align: center;
     color: black;
 
@@ -72,7 +72,32 @@ input {
 
     text-align: center;
     font-weight: bold;
-    
+
     border: 3px solid white;
     border-radius: 5px;
+}
+
+#try-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.try-row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.try-row p {
+    flex: 1;
+    padding: 7px;
+    border: 3px solid white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.try-row p:first-child {
+    flex: 3;
+    text-align: left;
 }

@@ -1,12 +1,13 @@
-import { useEffect, useState } from "react";
-import Header from "./components/Header";
 import InputContainer from "./components/InputContainer";
 import RulesModal from "./components/RulesModal";
+import { useEffect, useState } from "react";
+import Header from "./components/Header";
 
 export default function App() {
     const [countries, setCountries] = useState([]);
     const [showModal, setShowModal] = useState(false);
     const [selectedCountry, setSelectedCountry] = useState(null);
+    // TODO: implementar uma var 'gameEnd', para bloquear interações desnecessárias
 
     const [showInput, setShowInput] = useState(true);
     const [hintCount, setHintCount] = useState(0);
@@ -55,9 +56,7 @@ export default function App() {
     }
 
     function onHintClick() {
-        if (hintCount < 3) {
-            setHintCount(hintCount + 1);
-        }
+        if (hintCount < 3) setHintCount(hintCount + 1);
     }
 
     function compareCountries(c1, c2) {
@@ -77,19 +76,21 @@ export default function App() {
 
         if (matchedCountry) {
             console.log("Achei esse país:", matchedCountry);
-            setTries([...tries, matchedCountry]); // TODO: verificar duplicação...
+            if (!tries.find((c) => compareCountries(c, matchedCountry)))
+                setTries([matchedCountry, ...tries]);
 
             if (compareCountries(matchedCountry, selectedCountry)) {
-                console.log("Acertô!");
+                console.log("Acertou com", tries.length + 1, "tentativas!");
                 setShowInput(false);
                 // TODO: fazer a tela de fim de jogo
             }
 
-            return { found: true };
+            return true;
         }
 
         console.log("Não achei esse país...");
-        return { found: false };
+        // TODO: animar/demonstar ao erro
+        return false;
     }
 
     return (
@@ -106,9 +107,37 @@ export default function App() {
                 />
             )}
 
-            <section id="try-list"></section>
+            <section id="try-list">
+                {tries.map((country) => {
+                    const tips = {};
+                    if (country.continent === selectedCountry.continent)
+                        tips.continent = "Igual";
+                    else tips.continent = "Diferente";
 
-            <pre>{JSON.stringify(selectedCountry, null, 4)}</pre>
+                    if (country.population > selectedCountry.population)
+                        tips.population = "Maior";
+                    else if (country.population < selectedCountry.population)
+                        tips.population = "Menor";
+                    else tips.population = "Igual";
+
+                    if (country.area > selectedCountry.area)
+                        tips.area = "Maior";
+                    else if (country.area < selectedCountry.area)
+                        tips.area = "Menor";
+                    else tips.area = "Igual";
+
+                    return (
+                        <div className="try-row" key={country.country}>
+                            <p>{country.country_pt}</p>
+                            <p>{tips.continent}</p>
+                            <p>{tips.population}</p>
+                            <p>{tips.area}</p>
+                        </div>
+                    );
+                })}
+            </section>
+
+            {/* <pre>{JSON.stringify(selectedCountry, null, 4)}</pre> */}
         </main>
     );
 }

@@ -56,7 +56,7 @@ export default function App() {
     }
 
     function onHintClick() {
-        if (hintCount < 3) setHintCount(hintCount + 1);
+        if (showInput && hintCount < 3) setHintCount(hintCount + 1);
     }
 
     function compareCountries(c1, c2) {
@@ -114,17 +114,13 @@ export default function App() {
                         tips.continent = "Igual";
                     else tips.continent = "Diferente";
 
-                    if (country.population > selectedCountry.population)
-                        tips.population = "Maior";
-                    else if (country.population < selectedCountry.population)
-                        tips.population = "Menor";
-                    else tips.population = "Igual";
-
-                    if (country.area > selectedCountry.area)
-                        tips.area = "Maior";
-                    else if (country.area < selectedCountry.area)
-                        tips.area = "Menor";
-                    else tips.area = "Igual";
+                    ['population', 'area'].forEach(attr => {
+                        if (country[attr] > selectedCountry[attr])
+                            tips[attr] = "Maior";
+                        else if (country[attr] < selectedCountry[attr])
+                            tips[attr] = "Menor";
+                        else tips[attr] = "Igual";
+                    })
 
                     return (
                         <div className="try-row" key={country.country}>

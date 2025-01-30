@@ -2,11 +2,15 @@ import { useState } from "react";
 
 const styles = {
     hintOpen: { backgroundColor: "white", color: "black" },
-    hintClosed: {},
+    wrongCountry: {
+        color: "red",
+        borderColor: "red",
+        backgroundColor: "lightcoral",
+    },
 };
 
 const getStyle = (count, position) => {
-    return count > position ? styles.hintOpen : styles.hintClosed;
+    return count > position ? styles.hintOpen : {};
 };
 
 const popFmt = new Intl.NumberFormat("pt-BR");
@@ -29,7 +33,6 @@ const getValue = ({ continent_pt, population, area }, count, position) => {
         default:
             return "";
     }
-    return "";
 };
 
 export default function InputContainer({
@@ -38,6 +41,7 @@ export default function InputContainer({
     onCountrySubmit,
 }) {
     const [inputValue, setInputValue] = useState("");
+    const [error, setError] = useState(false);
 
     return (
         <section id="input-container">
@@ -45,10 +49,13 @@ export default function InputContainer({
                 type="text"
                 id="country"
                 value={inputValue}
+                style={error ? styles.wrongCountry : {}}
                 onChange={(event) => setInputValue(event.target.value)}
                 onKeyDown={(event) => {
-                    if (event.key === "Enter" && onCountrySubmit(event))
-                        setInputValue("");
+                    if (event.key === "Enter")
+                        if (onCountrySubmit(event)) setInputValue("");
+                        else setError(true);
+                    else setError(false);
                 }}
             />
 

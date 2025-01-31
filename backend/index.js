@@ -25,7 +25,6 @@ app.get("/data", (req, res) => {
     res.json(parsedData.data);
 });
 
-
 // Inicializar o servidor
 app.listen(PORT, () => {
     console.log(`Servidor rodando em http://localhost:${PORT}`);

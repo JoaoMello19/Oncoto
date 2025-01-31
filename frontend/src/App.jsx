@@ -2,12 +2,12 @@ import InputContainer from "./components/InputContainer";
 import RulesModal from "./components/RulesModal";
 import { useEffect, useState } from "react";
 import Header from "./components/Header";
+import CountryList from "./components/CountryList";
 
 export default function App() {
     const [countries, setCountries] = useState([]);
     const [showModal, setShowModal] = useState(false);
     const [selectedCountry, setSelectedCountry] = useState(null);
-    // TODO: implementar uma var 'gameEnd', para bloquear interações desnecessárias
 
     const [showInput, setShowInput] = useState(true);
     const [hintCount, setHintCount] = useState(0);
@@ -17,7 +17,15 @@ export default function App() {
         fetch("http://localhost:3000/data")
             .then((response) => response.json())
             .then((data) => {
-                setCountries(data);
+                setCountries(
+                    data.map((country) => {
+                        return {
+                            ...country,
+                            population: Number.parseInt(country.population),
+                            area: Number.parseInt(country.area),
+                        };
+                    })
+                );
                 const randomIndex = Math.floor(Math.random() * data.length);
                 setSelectedCountry(data[randomIndex]);
             })
@@ -107,22 +115,25 @@ export default function App() {
                 />
             )}
 
-            <section id="try-list">
+            <CountryList tries={tries} selectedCountry={selectedCountry} />
+
+            {/* <section id="try-list">
                 {tries.map((country) => {
                     const tips = {};
                     if (country.continent === selectedCountry.continent)
                         tips.continent = "Igual";
                     else tips.continent = "Diferente";
 
-                    ['population', 'area'].forEach(attr => {
+                    ["population", "area"].forEach((attr) => {
                         if (country[attr] > selectedCountry[attr])
                             tips[attr] = "Maior";
                         else if (country[attr] < selectedCountry[attr])
                             tips[attr] = "Menor";
                         else tips[attr] = "Igual";
-                    })
+                    });
 
                     return (
+                        // TODO: melhorar a exibição
                         <div className="try-row" key={country.country}>
                             <p>{country.country_pt}</p>
                             <p>{tips.continent}</p>
@@ -131,7 +142,7 @@ export default function App() {
                         </div>
                     );
                 })}
-            </section>
+            </section> */}
 
             {/* <pre>{JSON.stringify(selectedCountry, null, 4)}</pre> */}
         </main>

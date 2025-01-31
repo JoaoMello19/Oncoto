@@ -10,7 +10,7 @@ export default function Header({ onHelpClick, onHintClick }) {
     return (
         <header>
             <CircleHelpIcon onClick={onHelpClick} style={iconStyle} />
-            <h1>Oncotô</h1>
+            <h1>Jogo</h1>
             <LightbulbIcon onClick={onHintClick} style={iconStyle} />
         </header>
     );

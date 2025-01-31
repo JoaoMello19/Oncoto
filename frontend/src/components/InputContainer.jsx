@@ -52,10 +52,12 @@ export default function InputContainer({
                 style={error ? styles.wrongCountry : {}}
                 onChange={(event) => setInputValue(event.target.value)}
                 onKeyDown={(event) => {
-                    if (event.key === "Enter")
-                        if (onCountrySubmit(event)) setInputValue("");
+                    const value = event.target.value.trim();
+                    if (value && event.key === "Enter") {
+                        event.preventDefault();
+                        if (onCountrySubmit(value)) setInputValue("");
                         else setError(true);
-                    else setError(false);
+                    } else setError(false);
                 }}
             />
 

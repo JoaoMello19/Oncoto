@@ -80,15 +80,16 @@ input {
 tbody {
     display: flex;
     flex-direction: column;
-    gap: 10px
+    gap: 10px;
 }
 
 tr {
     display: flex;
-    gap: 10px;
+    justify-content: space-between;
 }
 
 th {
+    min-width: 1/6 !important;
     padding: 2px 10px;
     font-size: 0.9rem;
     font-weight: normal;
@@ -103,14 +104,11 @@ td {
 }
 
 .country-name {
-    flex: 3;
     text-align: left;
-
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+    min-width: 40%;
+    text-align: left;
 }
 
 .country-info {
-    flex: 1;
+    min-width: 17.5%;
 }

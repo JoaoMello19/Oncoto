@@ -73,10 +73,7 @@ export default function App() {
         return country1 == country2;
     }
 
-    function onCountrySubmit(event) {
-        event.preventDefault();
-
-        const inputValue = event.target.value;
+    function onCountrySubmit(inputValue) {
         const matchedCountry = countries.find(
             (country) =>
                 country.country_pt.toLowerCase() == inputValue.toLowerCase()
@@ -115,34 +112,9 @@ export default function App() {
                 />
             )}
 
-            <CountryList tries={tries} selectedCountry={selectedCountry} />
-
-            {/* <section id="try-list">
-                {tries.map((country) => {
-                    const tips = {};
-                    if (country.continent === selectedCountry.continent)
-                        tips.continent = "Igual";
-                    else tips.continent = "Diferente";
-
-                    ["population", "area"].forEach((attr) => {
-                        if (country[attr] > selectedCountry[attr])
-                            tips[attr] = "Maior";
-                        else if (country[attr] < selectedCountry[attr])
-                            tips[attr] = "Menor";
-                        else tips[attr] = "Igual";
-                    });
-
-                    return (
-                        // TODO: melhorar a exibição
-                        <div className="try-row" key={country.country}>
-                            <p>{country.country_pt}</p>
-                            <p>{tips.continent}</p>
-                            <p>{tips.population}</p>
-                            <p>{tips.area}</p>
-                        </div>
-                    );
-                })}
-            </section> */}
+            {tries.length > 0 && (
+                <CountryList tries={tries} selectedCountry={selectedCountry} />
+            )}
 
             {/* <pre>{JSON.stringify(selectedCountry, null, 4)}</pre> */}
         </main>

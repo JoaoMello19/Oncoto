@@ -1,3 +1,5 @@
+import { ArrowDown, ArrowUp, EqualIcon, EqualNotIcon } from "lucide-react";
+
 export default function CountryList({ tries, selectedCountry }) {
     return (
         <table>
@@ -13,19 +15,21 @@ export default function CountryList({ tries, selectedCountry }) {
                 {tries.map((country) => {
                     const tips = {};
                     if (country.continent === selectedCountry.continent)
-                        tips.continent = "Igual";
-                    else tips.continent = "Diferente";
+                        tips.continent = <EqualIcon />;
+                    else tips.continent = <EqualNotIcon />;
                     ["population", "area"].forEach((attr) => {
                         if (country[attr] > selectedCountry[attr])
-                            tips[attr] = "Maior";
+                            tips[attr] = <ArrowUp />;
                         else if (country[attr] < selectedCountry[attr])
-                            tips[attr] = "Menor";
-                        else tips[attr] = "Igual";
+                            tips[attr] = <ArrowDown />;
+                        else tips[attr] = <EqualIcon />;
                     });
                     return (
                         // TODO: melhorar a exibição
                         <tr className="try-row" key={country.country}>
-                            <td className="country-name">{country.country_pt}</td>
+                            <td className="country-name">
+                                {country.country_pt}
+                            </td>
                             <td className="country-info">{tips.continent}</td>
                             <td className="country-info">{tips.population}</td>
                             <td className="country-info">{tips.area}</td>

@@ -1,5 +1,8 @@
 import { useState } from "react";
 
+
+const placeholders = ["Continente", "População", "Área"];
+
 const styles = {
     hintOpen: { backgroundColor: "white", color: "black" },
     wrongCountry: {
@@ -13,15 +16,19 @@ const getStyle = (count, position) => {
     return count > position ? styles.hintOpen : {};
 };
 
-const popFmt = new Intl.NumberFormat("pt-BR");
+const popFmt = new Intl.NumberFormat("pt-BR", {
+    notation: "compact",
+    compactDisplay: "short",
+});
 const areaFmt = new Intl.NumberFormat("pt-BR", {
     style: "decimal",
+    notation: "compact",
+    compactDisplay: "short",
     minimumFractionDigits: 2,
     maximumFractionDigits: 2,
 });
 
 const getValue = ({ continent_pt, population, area }, count, position) => {
-    const placeholders = ["Continente", "População", "Área"];
     if (count <= position) return placeholders[position];
     switch (position) {
         case 0:

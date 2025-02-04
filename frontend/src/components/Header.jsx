@@ -1,17 +1,13 @@
 import { CircleHelpIcon, LightbulbIcon } from "lucide-react";
+import "./Header.css";
 
-const iconStyle = {
-    height: 40,
-    width: 40,
-    cursor: "pointer",
-};
 
 export default function Header({ onHelpClick, onHintClick }) {
     return (
         <header>
-            <CircleHelpIcon onClick={onHelpClick} style={iconStyle} />
+            <CircleHelpIcon onClick={onHelpClick} className="header-icon" />
             <h1>Jogo</h1>
-            <LightbulbIcon onClick={onHintClick} style={iconStyle} />
+            <LightbulbIcon onClick={onHintClick} className="header-icon" />
         </header>
     );
 }

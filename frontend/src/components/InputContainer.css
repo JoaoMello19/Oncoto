@@ -1,0 +1,32 @@
+input {
+    width: 100%;
+
+    margin-bottom: 10px;
+    padding: 10px;
+
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+
+    border-radius: 5px;
+}
+
+#hints {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+
+#hints > p {
+    /* width: 30%; */
+    flex: 1;
+    height: 100%;
+    padding: 10px;
+
+    text-align: center;
+    font-weight: bold;
+
+    /* border: 3px solid white; */
+    background-color: #555;
+    border-radius: 5px;
+}

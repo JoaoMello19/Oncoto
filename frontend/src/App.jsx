@@ -6,6 +6,8 @@ import RulesModal from "./components/RulesModal";
 import EndGame from "./components/EndGame";
 import Header from "./components/Header";
 
+import countryData from "../data/filtered_countries.json";
+
 export default function App() {
     const [countries, setCountries] = useState([]);
     const [showModal, setShowModal] = useState(false);
@@ -17,24 +19,12 @@ export default function App() {
     const [tries, setTries] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:3000/data")
-            .then((response) => response.json())
-            .then((data) => {
-                setCountries(
-                    data.map((country) => {
-                        return {
-                            ...country,
-                            population: Number.parseInt(country.population),
-                            area: Number.parseInt(country.area),
-                        };
-                    })
-                );
-                const randomIndex = Math.floor(Math.random() * data.length);
-                setSelectedCountry(data[randomIndex]);
+        // console.log("Dados lidos estaticamente:", countryData);
+        setCountries(countryData);
 
-                console.log("Resposta", data[randomIndex]);
-            })
-            .catch(console.error);
+        const randomIndex = Math.floor(Math.random() * countryData.length);
+        setSelectedCountry(countryData[randomIndex]);
+        // console.log("Resposta", countryData[randomIndex]);
     }, []);
 
     // TODO: implementar pequenas correções no nome

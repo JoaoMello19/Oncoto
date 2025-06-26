@@ -53,6 +53,7 @@ input {
 #hints {
     display: flex;
     flex-direction: row;
+    gap: 10px;
     /* justify-content: space-between; */
 }
 
@@ -102,5 +103,9 @@ td {
 }
 
 .country-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
     min-width: 17.5%;
 }

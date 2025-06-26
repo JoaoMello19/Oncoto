@@ -10,7 +10,25 @@ export default function RulesModal({ closeModal }) {
                     <li>Digite o nome do país no campo abaixo.</li>
                     <li>
                         Algumas dicas relativas ao país serão exibidas a cada
-                        tentativa.
+                        tentativa:
+                        <ul id="sub-list">
+                            <li>
+                                Uma seta para BAIXO indica que o PAÍS DIGITADO
+                                tem um valor MENOR que o do país escolhido.
+                            </li>
+                            <li>
+                                Uma seta para CIMA indica que o PAÍS DIGITADO
+                                tem um valor MAIOR que o do país escolhido.
+                            </li>
+                            <li>
+                                Um icone de IGUAL indica que o PAÍS DIGITADO tem
+                                o mesmo valor que o do país escolhido.
+                            </li>
+                            <li>
+                                Um icone de DIFERENTE indica que o PAÍS DIGITADO
+                                tem diferente valor que o do país escolhido.
+                            </li>
+                        </ul>
                     </li>
                     <li>Ganhe o jogo quando você acertar o nome do país.</li>
                     <li>

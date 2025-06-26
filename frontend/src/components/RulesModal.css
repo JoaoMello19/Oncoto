@@ -36,7 +36,20 @@
     margin-left: 20px;
 }
 
+#sub-list {
+    padding: 10px 0;
+}
+
+#sub-list li {
+    margin-left: 20px;
+    font-size: 0.9rem;
+}
+
 #modal p {
     text-align: right;
     font-weight: bold;
+}
+
+li, p {
+    text-align: justify;
 }

@@ -1,0 +1,16 @@
+#end-game {
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#end-game p {
+    font-size: 1.25rem;
+    text-align: center;
+    color: black;
+}
+
+#country-name {
+    font-size: 2rem !important;
+    font-weight: bold;
+}

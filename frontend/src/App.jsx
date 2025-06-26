@@ -1,14 +1,17 @@
-import InputContainer from "./components/InputContainer";
-import RulesModal from "./components/RulesModal";
 import { useEffect, useState } from "react";
-import Header from "./components/Header";
+
+import InputContainer from "./components/InputContainer";
 import CountryList from "./components/CountryList";
+import RulesModal from "./components/RulesModal";
+import EndGame from "./components/EndGame";
+import Header from "./components/Header";
 
 export default function App() {
     const [countries, setCountries] = useState([]);
     const [showModal, setShowModal] = useState(false);
     const [selectedCountry, setSelectedCountry] = useState(null);
 
+    const [showEndGame, setShowEndGame] = useState(false);
     const [showInput, setShowInput] = useState(true);
     const [hintCount, setHintCount] = useState(0);
     const [tries, setTries] = useState([]);
@@ -28,6 +31,8 @@ export default function App() {
                 );
                 const randomIndex = Math.floor(Math.random() * data.length);
                 setSelectedCountry(data[randomIndex]);
+
+                console.log("Resposta", data[randomIndex]);
             })
             .catch(console.error);
     }, []);
@@ -73,28 +78,29 @@ export default function App() {
         return country1 == country2;
     }
 
+    function compareNames(n1, n2) {
+        return n1.toLowerCase() == n2.toLowerCase();
+    }
+
     function onCountrySubmit(inputValue) {
-        const matchedCountry = countries.find(
-            (country) =>
-                country.country_pt.toLowerCase() == inputValue.toLowerCase()
+        const matchedCountry = countries.find(({ country_pt }) =>
+            compareNames(country_pt, inputValue)
         );
 
         if (matchedCountry) {
-            console.log("Achei esse país:", matchedCountry);
             if (!tries.find((c) => compareCountries(c, matchedCountry)))
                 setTries([matchedCountry, ...tries]);
 
             if (compareCountries(matchedCountry, selectedCountry)) {
                 console.log("Acertou com", tries.length + 1, "tentativas!");
                 setShowInput(false);
-                // TODO: fazer a tela de fim de jogo
+                setShowEndGame(true);
             }
 
             return true;
         }
 
         console.log("Não achei esse país...");
-        // TODO: animar/demonstar ao erro
         return false;
     }
 
@@ -112,11 +118,17 @@ export default function App() {
                 />
             )}
 
+            {showEndGame && (
+                <EndGame
+                    tries={tries}
+                    hints={hintCount}
+                    selectedCountry={selectedCountry}
+                />
+            )}
+
             {tries.length > 0 && (
                 <CountryList tries={tries} selectedCountry={selectedCountry} />
             )}
-
-            {/* <pre>{JSON.stringify(selectedCountry, null, 4)}</pre> */}
         </main>
     );
 }

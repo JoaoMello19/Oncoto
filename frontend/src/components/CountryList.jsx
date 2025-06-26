@@ -15,14 +15,14 @@ export default function CountryList({ tries, selectedCountry }) {
                 {tries.map((country) => {
                     const tips = {};
                     if (country.continent === selectedCountry.continent)
-                        tips.continent = <EqualIcon style={{height: 15, width: 15}} />;
-                    else tips.continent = <EqualNotIcon style={{height: 15, width: 15}} />;
+                        tips.continent = <EqualIcon style={{height: 20, width: 20}} />;
+                    else tips.continent = <EqualNotIcon style={{height: 20, width: 20}} />;
                     ["population", "area"].forEach((attr) => {
                         if (country[attr] > selectedCountry[attr])
-                            tips[attr] = <ArrowUp style={{height: 15, width: 15}} />;
+                            tips[attr] = <ArrowUp style={{height: 20, width: 20}} />;
                         else if (country[attr] < selectedCountry[attr])
-                            tips[attr] = <ArrowDown style={{height: 15, width: 15}} />;
-                        else tips[attr] = <EqualIcon style={{height: 15, width: 15}} />;
+                            tips[attr] = <ArrowDown style={{height: 20, width: 20}} />;
+                        else tips[attr] = <EqualIcon style={{height: 20, width: 20}} />;
                     });
                     return (
                         // TODO: melhorar a exibição
